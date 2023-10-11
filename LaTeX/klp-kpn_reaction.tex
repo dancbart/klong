@@ -1,6 +1,11 @@
 \documentclass{article}
 \usepackage{amsmath}
+
 \begin{document}
+
+\begin{equation}
+    E^2 = p^2 c^2 + m^2 c^4
+\end{equation}
 
 \textbf{Reaction:}
 \[ K_{\text{long}} + p \rightarrow K^+ + n \]
@@ -14,27 +19,23 @@
 \begin{equation}
     \vec{p}_i = \vec{p}_f + \vec{p}_n
 \end{equation}
-
-\textbf{Energy for particles:}
+    
 \begin{equation}
-    E^2 = p^2 c^2 + m^2 c^4
+    \cos(\theta) = \frac{k_{\text{Long}_p} + k_{\text{Plus}_p} + n_m^2 - \sqrt{k_{\text{Plus}_p}^2 + k_{p_m}^2} - n_e + \sqrt{k_{p_m}^2 + k_{\text{Plus}_p}^2}}{2 \cdot k_{\text{Long}_p} \cdot k_{\text{Plus}_p}}
+    \end{equation}
+    
+    where:
+    \begin{align*}
+    k_{\text{Long}_p} & \text{ is the Longitudinal Momentum} \\
+    k_{\text{Plus}_p} & \text{ is the Momentum of K+} \\
+    n_m & \text{ is the Neutron Mass (recoil)} \\
+    n_e & \text{ is the Neutron Energy (recoil)} \\
+    k_{p_m} & \text{ is the Mass of K+}
+    \end{align*}
+    
+    This formula describes the calculation of $\cos(\theta)$ in terms of the given variables.
+
 \end{equation}
 
-\textbf{Components of Momentum:}
-\begin{align}
-    p_{i,z} &= p_{f,z} + p_{n,z} \\
-    p_{i,x} &= p_{f,x} + p_{n,x}
-\end{align}
-
-\textbf{Rearrange for \( K^+ \) Momentum:}
-\begin{align}
-    p_{f,z} &= p_{i,z} - p_{n,z} \\
-    p_{f,x} &= p_{i,x} - p_{n,x}
-\end{align}
-
-\textbf{Solve for \( \theta \), the angle of \( K^+ \) w.r.t \( K_{\text{long}} \):}
-\begin{equation}
-    \theta = \tan^{-1} \left( \frac{p_{f,z}}{p_{f,x}} \right)
-\end{equation}
 
 \end{document}
